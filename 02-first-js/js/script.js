@@ -1,27 +1,19 @@
-//js начало
+const numberOfFilms = +prompt('сколько фильмов вы уже посмотрели', '');
 
-//Переменные
-
-const first = 'переменная с неизменным значением - константа';
-let second = 'переменная значение которой можно поменять';
-
-//Типы данных
-
-//1.Простые (примитивы) типы данный:
-
-const numberType = 10; //числа
-const stringType = 'string'; //строка
-const boolenType = false / true; //логические(булевые)
-const typeNull = null; // null - значение, которое представляет собой «ничего», «пусто» или «значение неизвестно».
-const typeUndefined = undefined; // undefined - означает, что «значение не было присвоено». 
-//null используется для присвоения переменной «пустого» или «неизвестного» значения, а undefined – для проверок, была ли переменная назначена.
-const typeSymbol = Symbol; //
-const typeBigInt = BigInt; //Тип BigInt был добавлен в JavaScript, чтобы дать возможность работать с целыми числами произвольной длины.
-
-//2.Особые типы данных - object (объект) – особенный.
-
-const objType = {
-    a: 1,
-    b: 2,
-    c: 3
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
 };
+
+const a = prompt('Один из последних просмотренных фильмов?', ''),
+    b = +prompt('На сколько оцените его?', ''),
+    c = prompt('Один из последних просмотренных фильмов?', ''),
+    d = +prompt('На сколько оцените его?', '');
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+console.log(personalMovieDB);
