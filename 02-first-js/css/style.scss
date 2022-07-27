@@ -1,0 +1,97 @@
+//** ---ОСНОВЫЕ СТИЛИ--- */
+
+$mainText: 16px;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+img {
+    vertical-align: top;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+    font-size: $mainText;
+}
+
+body {
+    line-height: 1;
+}
+
+.visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #794f45;
+    padding: 15px;
+}
+
+footer {
+    background-color: #794f45;
+    padding: 15px;
+}
+
+main {
+    flex-grow: 1;
+}
+
+//** ---ОГРАНИЧИВАЮЩИЙ КОНТЕЙНЕР--- */
+
+[class*="__container"] {
+    max-width: 1050px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+
+//** ------ */
+
